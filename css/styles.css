@@ -599,6 +599,11 @@ img {
     border-radius: 4px;
 }
 
+.subscribe__button:hover,
+.subscribe__button:focus {
+    
+}
+
 .subscribe__icon__type {
     margin-left: 16px;
     fill: #F4F4FD;
