@@ -721,7 +721,11 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
 
 .checkbox-custom::after {
@@ -734,8 +738,35 @@ img {
     transition: transform 0.2s ease-in-out;
 }
 
+.policy-link {
+    color: #4d5ae5;
+
+}
+
 input[type="checkbox"]:checked+.checkbox-custom::after {
     transform: scale(1);
+}
+
+.button-container {
+}
+
+.send-button {
+font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background: #4D5AE5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
