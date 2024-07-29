@@ -165,7 +165,8 @@ img {
     background-position: center;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
     background-size: cover;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero__title {
@@ -693,26 +694,17 @@ img {
 
 .modal-checkbox-container {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
 }
 
-.modal-checkbox-label {
+.modal-checkbox-label{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--label-color, #8e8f99);
     display: flex;
     align-items: center;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
 }
 
 .checkbox-custom {
@@ -738,20 +730,24 @@ img {
     transition: transform 0.2s ease-in-out;
 }
 
+.checkbox-icon {
+    width: 10px;
+    height: 8px;
+}
+
 .policy-link {
     color: #4d5ae5;
-
+    line-height: 1.3;
 }
 
-input[type="checkbox"]:checked+.checkbox-custom::after {
-    transform: scale(1);
-}
-
-.button-container {
+.modal-privacy:checked + .modal-checkbox-label> .checkbox-custom {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .send-button {
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
