@@ -734,7 +734,7 @@ img {
     transition: transform 0.2s ease-in-out;
 }
 
-.input[type="checkbox"]:checked+.checkbox-custom::after {
+input[type="checkbox"]:checked+.checkbox-custom::after {
     transform: scale(1);
 }
 
